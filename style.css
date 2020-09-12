@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.25em;
+}
+
+
+
+body{
+    width: 100%;
+    background: rgb(25,25,25);
+}
+
+#header {
+    
+    z-index: 3;
+    top: 0;
+     position: absolute;
+     width: 100%;
+    overflow: hidden;
+}
+
+
+#header .wrapper {
+    height: 120px;
+    position: relative;
+}
+.wrapper {
+    margin: 0 auto;
+}
+#header h1 {
+    float: left;
+    color: #F8B500;
+    position: absolute;
+    font-size: 45px;
+    margin-right: 48px;
+    top:40px;
+    left:20px;
+    transition: .5s;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#header h1:hover {
+    color: rgb(225,225,225);
+}
+nav {
+    overflow: hidden;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 120px;
+}
+nav li {
+    list-style-type: none;
+/*    float: left;*/
+    margin: 10px 40px;
+}
+nav a{
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 14px 16px 0;
+    transition: 0.3s;
+    font-family: 'Architects Daughter', cursive;
+}
+
+nav a:hover{
+    border-bottom: 2px solid rgb(225,225,225);
+    color: #f8b500;
+    
+}
+
+.main-visual {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 160px;
+}
+
+
+.left-headline {
+    width: 700px;
+    height: 80px;
+    background: #f8b500;
+    position: relative;
+    margin-bottom: 80px;
+    float: left;
+    transition: .3s;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+}
+
+.left-headline p {
+    color: #fff;
+    position: relative;
+    right:30px;
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+.left-headline:hover {
+        color: #f8b500;
+    background: #000;
+}
+
+#about {
+    position: relative;
+}
+
+#about .container {
+    clear: both;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: rgb(225,225,225);
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+#profile_a {
+    width: 800px;
+    height: 550px;
+    line-height: 30px;
+    margin: 0 0 0 40px;
+    padding-top: 30px;
+}
+#profile_a h3 {
+    margin: 10px 0 35px 10px;
+    color:rgb(25,25,25);
+    font-family: 'Architects Daughter', cursive;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+#profile_a p {
+    margin: 20px 0 20px 10px;
+    font-size: 18px;
+    color:rgb(25,25,25);
+    font-family: 'Josefin Sans', 'M PLUS Rounded 1c', sans-serif;
+
+}
+
+#profile_a h2 {
+    margin: 20px 0 40px 10px;
+    
+    font-size: 45px;
+    font-weight: normal;
+    color: #105779;
+    font-family: 'Josefin Sans', 'M PLUS Rounded 1c', sans-serif;
+
+}
+
+.profile_a2 {
+    float: left;
+}
+
+#profile_a span {
+    font-size: 16px;
+    color:rgb(25,25,25);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.profile-image {
+    height:400px;
+    width: 600px;
+    position: absolute;
+    float: left;
+    top;0;
+    right: 0;
+    
+}
+
+#footer {
+    background-color: rgb(225,225,225);
+    color: rgb(25,25,25);
+    height: 40px;
+}
+
+#footer p {
+    font-size: 14px;
+    color: rgb(25,25,25);
+    padding-top: 12px;
+    text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+
+.about2 {
+    position: relative;
+}
+
+#about2 .container {
+/*    clear: both;*/
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: rgb(225,225,225);
+    position: relative;
+}
+
+.pic-a {
+    display: flex;
+    overflow: hidden;
+    height: 300px;
+    margin: 80px 40px 80px 40px;
+    background-color: rgb(25,25,25);
+       align-items: center;
+    justify-content: center;
+}
+
+.foods {
+width: 300px;
+margin-right: 20px; /* 画像同士の余白は20px */
+float: left;
+    
+    
+}
+
+#wrapper{
+    margin-right: -20px;
+}
