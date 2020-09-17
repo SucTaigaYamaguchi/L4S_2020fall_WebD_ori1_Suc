@@ -1,77 +1,89 @@
-*{
+* {
     margin: 0;
     padding: 0;
     letter-spacing: 0.25em;
 }
 
-
-
-body{
+body {
     width: 100%;
-    background: rgb(25,25,25);
+    background: rgb(25, 25, 25);
 }
 
 #header {
-    
     z-index: 3;
     top: 0;
-     position: absolute;
-     width: 100%;
+    position: relative;
+    width: 100%;
     overflow: hidden;
 }
 
-
 #header .wrapper {
-    height: 120px;
+    /*    height: 120px;*/
     position: relative;
 }
+
 .wrapper {
     margin: 0 auto;
+    width: 100vw;
 }
+
 #header h1 {
     float: left;
     color: #F8B500;
-    position: absolute;
+    position: relative;
     font-size: 45px;
     margin-right: 48px;
+    /*
     top:40px;
     left:20px;
+*/
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 50%;
     transition: .5s;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 #header h1:hover {
-    color: rgb(225,225,225);
-}
-nav {
-    overflow: hidden;
+    color: rgb(225, 225, 225);
 }
 
-nav ul {
+
+/*
+nav {
+    overflow: hidden;
+    width:50%;
+}
+*/
+
+ul {
+    width: 40%;
     display: flex;
     justify-content: flex-end;
+    position: relative;
     align-items: center;
     height: 120px;
 }
-nav li {
+
+li {
     list-style-type: none;
-/*    float: left;*/
+    /*    float: left;*/
     margin: 10px 40px;
 }
-nav a{
+
+a {
     font-size: 20px;
     display: block;
     text-decoration: none;
     color: #fff;
-    margin: 14px 16px 0;
+    /*    margin: 14px 16px 0;*/
     transition: 0.3s;
     font-family: 'Architects Daughter', cursive;
 }
 
-nav a:hover{
-    border-bottom: 2px solid rgb(225,225,225);
+a:hover {
+    border-bottom: 2px solid rgb(225, 225, 225);
     color: #f8b500;
-    
 }
 
 .main-visual {
@@ -82,16 +94,14 @@ nav a:hover{
     margin-bottom: 160px;
 }
 
-
 .left-headline {
-    width: 700px;
+    width: 40%;
     height: 80px;
     background: #f8b500;
     position: relative;
     margin-bottom: 80px;
     float: left;
     transition: .3s;
-    
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -101,14 +111,13 @@ nav a:hover{
 .left-headline p {
     color: #fff;
     position: relative;
-    right:30px;
+    right: 30px;
     font-size: 50px;
     font-family: 'Amatic SC', cursive;
-    
 }
 
 .left-headline:hover {
-        color: #f8b500;
+    color: #f8b500;
     background: #000;
 }
 
@@ -120,7 +129,7 @@ nav a:hover{
     clear: both;
     margin-top: 80px;
     margin-bottom: 80px;
-    background-color: rgb(225,225,225);
+    background-color: rgb(225, 225, 225);
     position: relative;
 }
 
@@ -129,15 +138,16 @@ nav a:hover{
 }
 
 #profile_a {
-    width: 800px;
+    width: 100%;
     height: 550px;
     line-height: 30px;
     margin: 0 0 0 40px;
     padding-top: 30px;
 }
+
 #profile_a h3 {
     margin: 10px 0 35px 10px;
-    color:rgb(25,25,25);
+    color: rgb(25, 25, 25);
     font-family: 'Architects Daughter', cursive;
 }
 
@@ -148,66 +158,65 @@ h3 {
 #profile_a p {
     margin: 20px 0 20px 10px;
     font-size: 18px;
-    color:rgb(25,25,25);
+    color: rgb(25, 25, 25);
     font-family: 'Josefin Sans', 'M PLUS Rounded 1c', sans-serif;
-
 }
 
 #profile_a h2 {
     margin: 20px 0 40px 10px;
-    
     font-size: 45px;
     font-weight: normal;
     color: #105779;
     font-family: 'Josefin Sans', 'M PLUS Rounded 1c', sans-serif;
-
 }
 
 .profile_a2 {
     float: left;
+    width: 50%;
 }
 
 #profile_a span {
     font-size: 16px;
-    color:rgb(25,25,25);
+    color: rgb(25, 25, 25);
     font-family: 'Josefin Sans', sans-serif;
 }
 
 .profile-image {
-    height:400px;
-    width: 600px;
-    position: absolute;
+    height: auto;
+    width: 35%;
+    margin-left: 15%;
+    position: relative;
+    display: inline-block;
+    /*
     float: left;
     top;0;
     right: 0;
-    
+*/
 }
 
 #footer {
-    background-color: rgb(225,225,225);
-    color: rgb(25,25,25);
+    background-color: rgb(225, 225, 225);
+    color: rgb(25, 25, 25);
     height: 40px;
 }
 
 #footer p {
     font-size: 14px;
-    color: rgb(25,25,25);
+    color: rgb(25, 25, 25);
     padding-top: 12px;
     text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-
+    font-family: 'Josefin Sans', sans-serif;
 }
-
 
 .about2 {
     position: relative;
 }
 
 #about2 .container {
-/*    clear: both;*/
+    /*    clear: both;*/
     margin-top: 80px;
     margin-bottom: 80px;
-    background-color: rgb(225,225,225);
+    background-color: rgb(225, 225, 225);
     position: relative;
 }
 
@@ -216,19 +225,18 @@ h3 {
     overflow: hidden;
     height: 300px;
     margin: 80px 40px 80px 40px;
-    background-color: rgb(25,25,25);
-       align-items: center;
+    background-color: rgb(25, 25, 25);
+    align-items: center;
     justify-content: center;
 }
 
 .foods {
-width: 300px;
-margin-right: 20px; /* 画像同士の余白は20px */
-float: left;
-    
-    
+/*    width: 300px;*/
+    margin-right: 20px;
+    /* 画像同士の余白は20px */
+    float: left;
 }
 
-#wrapper{
+#wrapper {
     margin-right: -20px;
 }
