@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     letter-spacing: 0.25em;
+    box-sizing: border-box;
 }
 
 body {
@@ -108,12 +109,13 @@ a:hover {
     background: #f8b500;
     position: relative;
     margin-bottom: 80px;
-    float: left;
+    /*    float: left;*/
     /*    transition: .3s;*/
     display: flex;
     align-items: center;
     justify-content: flex-end;
     border-radius: 10px;
+    z-index: 100;
 }
 
 .left-headline p {
@@ -134,23 +136,25 @@ a:hover {
 }
 
 #about .container {
-    clear: both;
+    /*    clear: both;*/
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     background-color: rgb(225, 225, 225);
     position: relative;
 }
 
 .container {
-    margin: 0 auto;
+    /*    margin: 0 auto;*/
 }
 
 #profile_a {
     width: 100%;
-    height: 550px;
+    /*    height: 550px;*/
     line-height: 30px;
-    margin: 0 0 0 40px;
-    padding-top: 30px;
+    margin: 0 0px 0 0px;
+    /*    padding-top: 30px;*/
+    /*    padding-bottom: 30px;*/
+    overflow: auto;
 }
 
 #profile_a h3 {
@@ -182,6 +186,7 @@ h3 {
 .profile_a2 {
     float: left;
     width: 50%;
+    padding: 40px 40px 40px 40px;
 }
 
 #profile_a span {
@@ -190,17 +195,25 @@ h3 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.pm {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .profile-image {
     height: auto;
-    width: 35vw;
-    margin-left: 15%;
+    width: 100%;
+    /*    margin-left: 15%;*/
     position: relative;
     display: inline-block;
-    /*
+    padding: 40px;
     float: left;
-    top;0;
+    top;
+    0;
     right: 0;
-*/
+    */
 }
 
 #footer {
@@ -223,6 +236,7 @@ h3 {
 
 #about2 .container {
     /*    clear: both;*/
+    
     margin-top: 80px;
     margin-bottom: 80px;
     background-color: rgb(225, 225, 225);
@@ -250,6 +264,36 @@ h3 {
     margin-right: 0px;
 }
 
-@media all end (max-width 1100px) {
+.foods img {
+    width: 300px;
+}
+
+@media all and (max-width: 1100px) {
+    #header .wrapper {
+    height: 120px;
+    position: relative;
+}
+    #header h1 {
+        float: none;
+        width: 100%;
+        text-align: center;
+            margin-left: 0px;
+    }
+    ul {
+        width: 40%;
+    display: block;
+    align-items: center;
+        text-align: center;
+}
+}
+    .profile_a2{
+        float:none;
+        width:100%;
+    }
+    .pm {
+        width:100%;
+    }
     
+}
+@media all and (max-width: 650px) {
 }
