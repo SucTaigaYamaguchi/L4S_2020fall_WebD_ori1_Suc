@@ -39,7 +39,7 @@ body {
     left:20px;
 */
     margin-top: 30px;
-    margin-left: 40px;
+    margin-left: 120px;
     margin-bottom: 30px;
     width: 50%;
     transition: 1.5s;
@@ -77,7 +77,7 @@ ul {
     /*    margin-right: -20px;*/
     list-style-type: none;
     float: left;
-    margin: 0px 40px 0px 40px;
+    margin: 0px 120px 0px 40px;
 }
 
 a {
@@ -165,16 +165,23 @@ h3 {
     font-size: 40px;
 }
 
-#profile_a p {
+#profile_a p{
     margin: 20px 0 20px 10px;
-    font-size: 18px;
+    font-size: 17px;
+    color: rgb(25, 25, 25);
+    font-family: 'Josefin Sans', 'Sawarabi Gothic', sans-serif;
+}
+
+#profile_a h4{
+    margin: 20px 0 20px 10px;
+    font-size:18px;
     color: rgb(25, 25, 25);
     font-family: 'Josefin Sans', 'Sawarabi Gothic', sans-serif;
 }
 
 #profile_a h2 {
-    margin: 20px 0 40px 10px;
-    font-size: 45px;
+    margin: 40px 0 40px 10px;
+    font-size: 50px;
     font-weight: normal;
     color: #105779;
     font-family: 'Josefin Sans', '  Sawarabi Gothic', sans-serif;
@@ -183,11 +190,11 @@ h3 {
 .profile_a2 {
     float: left;
     width: 50%;
-    padding: 40px 40px 40px 40px;
+    padding: 40px 60px 40px 60px;
 }
 
 #profile_a span {
-    font-size: 16px;
+    font-size: 21px;
     color: rgb(25, 25, 25);
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -205,7 +212,7 @@ h3 {
     /*    margin-left: 15%;*/
     position: relative;
     display: inline-block;
-    padding: 40px;
+    padding: 60px 45px 45px 60px;
     float: left;
     top;
     0;
@@ -268,12 +275,13 @@ h3 {
     width: 300px;
     transition: .3s;
 }
+.foods img:hover {
+  border-radius: 25px;
+}
 
 
-
-
-@media all and (max-width: 1100px) {
-    #header .wrapper {
+@media all and (max-width: 1250px) {
+        #header .wrapper {
     height: 120px;
     position: relative;
 }
@@ -289,6 +297,11 @@ h3 {
         text-align: center;
     justify-content: center;
 }
+    
+}
+
+@media all and (max-width: 1100px) {
+
     .profile_a2{
         float:none;
         width:100%;
@@ -315,7 +328,7 @@ h3 {
 
     
 }
-@media all and (max-width: 650px) {
+@media all and (max-width: 700px) {
   .normal-li {
     margin: 0px 20px;
 }
