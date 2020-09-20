@@ -65,6 +65,9 @@ ul {
     position: relative;
     align-items: center;
     height: 90px;
+
+
+    
 }
 
 .normal-li {
@@ -73,16 +76,23 @@ ul {
     margin: 0px 40px;
 }
 
-.end-li {
+.normal-li2 {
+    list-style-type: none;
+    float: left;
+    margin: 0px 15px;
+}
+
+
+.end-li2 {
     /*    margin-right: -20px;*/
     list-style-type: none;
     float: left;
-    margin: 0px 120px 0px 40px;
+    margin: 0px 120px 0px 10px;
 }
 
-a {
+.move {
     font-size: 15px;
-/*    display: block;*/
+    /*    display: block;*/
     text-decoration: none;
     color: #fff;
     /*    margin: 14px 16px 0;*/
@@ -90,9 +100,57 @@ a {
     font-family: 'Architects Daughter', cursive;
 }
 
-a:hover {
+
+.move:hover {
     border-bottom: 2px solid rgb(225, 225, 225);
     color: #f8b500;
+}
+
+.flowbtn{
+border-radius:50%;
+position:relative;
+display:inline-block;
+width:45px;
+height:45px;
+font-size:30px;
+text-decoration:none;
+transition:.6s;
+}
+
+.flowbtn:hover{
+color:#fff!important;
+}
+
+.flowbtn i{
+position:absolute;
+top:50%;
+left:50%;
+-ms-transform:translate(-50%,-50%);
+-webkit-transform:translate(-50%,-50%);
+transform:translate(-50%,-50%);
+
+}
+
+.flowbtn.twi-btn{
+color:#55acee;
+       
+}
+
+.flowbtn.twi-btn:hover{
+border:solid 1px #55acee;
+background:#55acee;
+}
+
+.flowbtn.insta_btn {
+color:#c6529a;
+
+  
+}
+
+.flowbtn.insta_btn:hover{
+border:solid 1px #c6529a;
+background:#c6529a;
+    
 }
 
 .main-visual {
@@ -110,7 +168,7 @@ a:hover {
     position: relative;
     margin-bottom: 80px;
     /*    float: left;*/
-        transition: .3s;
+    transition: .3s;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -125,8 +183,6 @@ a:hover {
     font-size: 40px;
     font-family: 'Architects Daughter', cursive;
 }
-
-
 
 #about {
     position: relative;
@@ -156,32 +212,32 @@ a:hover {
 
 #profile_a h3 {
     margin: 10px 0 35px 10px;
-    color: rgb(25, 25, 25);
+    color: #8f2114;
     font-family: 'Architects Daughter', cursive;
     /*    装飾系のフォント調節*/
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
-#profile_a p{
+#profile_a p {
     margin: 20px 0 20px 10px;
     font-size: 17px;
     color: rgb(25, 25, 25);
     font-family: 'Josefin Sans', 'Sawarabi Gothic', sans-serif;
 }
 
-#profile_a h4{
+#profile_a h4 {
     margin: 20px 0 20px 10px;
-    font-size:18px;
+    font-size: 18px;
     color: rgb(25, 25, 25);
     font-family: 'Josefin Sans', 'Sawarabi Gothic', sans-serif;
 }
 
 #profile_a h2 {
     margin: 40px 0 40px 10px;
-    font-size: 50px;
+    font-size: 43px;
     font-weight: normal;
     color: #105779;
     font-family: 'Josefin Sans', '  Sawarabi Gothic', sans-serif;
@@ -212,7 +268,7 @@ h3 {
     /*    margin-left: 15%;*/
     position: relative;
     display: inline-block;
-    padding: 60px 45px 45px 60px;
+    padding: 45px 60px 45px 60px;
     float: left;
     top;
     0;
@@ -240,8 +296,7 @@ h3 {
 
 #about2 .container {
     /*    clear: both;*/
-    
-/*
+    /*
     margin-top: 80px;
     margin-bottom: 80px;
 */
@@ -275,100 +330,88 @@ h3 {
     width: 300px;
     transition: .3s;
 }
-.foods img:hover {
-  border-radius: 25px;
-}
 
+.foods img:hover {
+    border-radius: 25px;
+}
 
 @media all and (max-width: 1250px) {
-        #header .wrapper {
-    height: 120px;
-    position: relative;
-}
+    #header .wrapper {
+        height: 120px;
+        position: relative;
+    }
     #header h1 {
         float: none;
         width: 100%;
         text-align: center;
-            margin-left: 0px;
+        margin-left: 0px;
     }
     ul {
         width: 40%;
-    display: inline;
+        display: inline;
         text-align: center;
-    justify-content: center;
-}
-    
+        justify-content: center;
+    }
 }
 
 @media all and (max-width: 1100px) {
-
-    .profile_a2{
-        float:none;
-        width:100%;
+    .profile_a2 {
+        float: none;
+        width: 100%;
     }
     .pm {
-        width:100%;
+        width: 100%;
     }
-    
     .foods img {
         width: 150px;
     }
-    
-        .foods img:hover{
+    .foods img:hover {
         width: 40vw;
     }
     .pic-a {
-    margin: 80px 40px 70px 40px;
-}
-
-.foods {
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-    
-}
-@media all and (max-width: 700px) {
-  .normal-li {
-    margin: 0px 20px;
-}
-
-.end-li {
-    margin: 0px 20px 0px 20px;
-}
-    
-    .left-headline {
-    width: 60%;
-    
-}
+        margin: 80px 40px 70px 40px;
+    }
     .foods {
-
-    float:none;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
 }
-        .foods img:hover{
+
+@media all and (max-width: 700px) {
+    .normal-li {
+        margin: 0px 20px;
+    }
+        .normal-li {
+        margin: 0px 7.5px;
+    }
+    .end-li2 {
+        margin: 0px 20px 0px 5px;
+    }
+    .left-headline {
+        width: 60%;
+    }
+    .foods {
+        float: none;
+    }
+    .foods img:hover {
         width: 80vw;
     }
 }
 
 @media all and (max-width: 450px) {
-  .normal-li {
-    margin: 0px 15px;
-}
-
-.end-li {
-    margin: 0px 15px 0px 15px;
-}
-    
+    .normal-li {
+        margin: 0px 15px;
+    }
+    .end-li {
+        margin: 0px 15px 0px 15px;
+    }
     a {
-    font-size: 10px;
-}
-    
-       .foods img {
+        font-size: 10px;
+    }
+    .foods img {
         width: 100px;
     }
-        .left-headline {
-    width: 70%;
-}
-
+    .left-headline {
+        width: 70%;
     }
-
+}
