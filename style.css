@@ -67,6 +67,7 @@ ul {
     height: 90px;
 
 
+
     
 }
 
@@ -80,6 +81,7 @@ ul {
     list-style-type: none;
     float: left;
     margin: 0px 15px;
+    
 }
 
 
@@ -100,7 +102,6 @@ ul {
     font-family: 'Architects Daughter', cursive;
 }
 
-
 .move:hover {
     border-bottom: 2px solid rgb(225, 225, 225);
     color: #f8b500;
@@ -110,11 +111,13 @@ ul {
 border-radius:50%;
 position:relative;
 display:inline-block;
-width:45px;
-height:45px;
+width:50px;
+height:50px;
 font-size:30px;
 text-decoration:none;
 transition:.6s;
+    
+    
 }
 
 .flowbtn:hover{
@@ -122,12 +125,16 @@ color:#fff!important;
 }
 
 .flowbtn i{
+/*        float: left;*/
 position:absolute;
-top:50%;
-left:50%;
+top:52%;
+left:55%;
+
 -ms-transform:translate(-50%,-50%);
 -webkit-transform:translate(-50%,-50%);
 transform:translate(-50%,-50%);
+    text-align: center;
+
 
 }
 
@@ -143,7 +150,6 @@ background:#55acee;
 
 .flowbtn.insta_btn {
 color:#c6529a;
-
   
 }
 
